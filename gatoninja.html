@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato ninja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 class="titulo"> De ninja a gato</h1>
+    <img src="ninja (1).jpg" data-alt-src="gato (1).jpg" /><br>
+    <img src='ninja (2).jpg' data-alt-src="gato (2).jpg" /><br>
+    <img src="ninja (3).jpg" data-alt-src="gato (3).jpg" /><br>
+    <img src="ninja (4).jpg" data-alt-src="gato (4).jpg" /><br>
+    <img src="ninja (5).jpg" data-alt-src="gato (5).jpg" /><br>
+    <script>
+        $(document).ready(function() {});
+        $('img').click(function() {
+            $(this).attr('src', $(this).attr('data-alt-src'));
+        });
+    </script>
+</body>
+</html>
